@@ -1,11 +1,15 @@
-package com.ms.user.model;
+package com.ms.user.models;
 
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.UUID;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "users")
 public class User implements Serializable {
@@ -19,5 +23,6 @@ public class User implements Serializable {
     private String name;
 
     private String email;
+
 
 }
