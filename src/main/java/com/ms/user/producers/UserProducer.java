@@ -22,7 +22,7 @@ public class UserProducer {
 
     public void publishMessage(User user) {
         var emailDto = new EmailDto();
-        emailDto.setUserId(user.getId());
+        emailDto.setUserId(user.getUserId());
         emailDto.setEmailTo(user.getEmail());
         emailDto.setSubject("Successful registration");
         emailDto.setBody(user.getName() + ", welcome to our application! \nWe appreciate your registration to our website, fell free to use our platform as you wish !!");
